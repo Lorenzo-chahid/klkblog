@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '4&k+$w#@qwhc)@6pd&+#&@4)9g+z)j_mt=nql
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["klkblog.herokuapp.com"]
+ALLOWED_HOSTS = ["static-d.herokuapp.com"]
 
 
 # Application definition
