@@ -36,8 +36,8 @@
 										<a href="#" class="author"><span class="name">{{ object.author }}</span><img src="{% static 'blog/images/avatar.jpg' %}" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="{% static 'blog/images/pic01.jpg' %}" alt="" /></span>
-                                <p>{{ object.content }}</p>
+								<span class="image featured"><img src="{% static 'klk/images/pic01.jpg' %}" alt="" /></span>
+                                <p>{{ object.content|truncatechars:":10" }}</p>
 								<footer>
 									<ul class="stats">
 										<li><a href="#">General</a></li>

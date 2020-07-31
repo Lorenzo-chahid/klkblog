@@ -26,10 +26,10 @@
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2015-11-01">{{ article.created_on }}</time>
-										<a href="#" class="author"><span class="name">{{ article.author }}</span><img src="images/avatar.jpg" alt="" /></a>
+										<a href="#" class="author"><span class="name">{{ article.author }}</span><img src="{% static 'images/avatar.jpg ' %} alt="" /></a>
 									</div>
 								</header>
-								<a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="single.html" class="image featured"><img src="{% static 'images/pic01.jpg ' %}" alt="" /></a>
                                 <p>{{ article.content }}</p>
 								<footer>
 									<ul class="actions">
@@ -53,7 +53,7 @@
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2015-10-18">{{ article.created_on }}</time>
-										<a href="#" class="author"><span class="name">{{ article.author }}</span><img src="images/avatar.jpg" alt="" /></a>
+										<a href="#" class="author"><span class="name">{{ article.author }}</span><img src="{% static 'images/avatar.jpg ' %}" alt="" /></a>
 									</div>
 								</header>
 
@@ -383,9 +383,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											<header>
 												<h3><a href="single.html">{{ el.title }}</a></h3>
 												<time class="published" datetime="2015-10-19">{{ el.created_on }}</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+												<a href="#" class="author"><img src="{% static 'images/avatar.jpg ' %}" alt="" /></a>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="single.html" class="image"><img src="{% static 'images/pic05.jpg ' %}" alt="" /></a>
 										</article>
                                     {% endfor %}
                                 </div>
