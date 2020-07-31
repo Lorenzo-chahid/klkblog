@@ -17,7 +17,7 @@ import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
+TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,10 +26,7 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '4&k+$w#@qwhc)@6pd&+#&@4)9g+z)j_mt=nqlf+35=xa#g3xsm')
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.environ.get('ENV') == 'PRODUCTION':
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'klkblog',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
